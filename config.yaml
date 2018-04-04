@@ -48,11 +48,16 @@ logs:
   #- {type: file, path: sinopia.log, level: info}
 
 # host
-listen: localhost:4873
+listen: 0.0.0.0:4873
 
 # users
 users:
   admin:
-    # crypto.createHash('sha1').update('lsh0425').digest('hex') 
-    password: 65eb28f7dee058a88ad3f24c48d92e6318fadf24
+    # crypto.createHash('sha1').update('password').digest('hex') 
+    password: 5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8
 
+
+# web
+web:
+  # html title tag
+  title: Private NPM registry
